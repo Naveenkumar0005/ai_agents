@@ -1,0 +1,36 @@
+[project]
+name = "debatenb"
+version = "0.1.0"
+description = "debateNB using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[litellm,tools]==1.11.0",
+    "crewai[litellm]", 
+    "lancedb>=0.21.0",
+]
+
+
+[project.scripts]
+debatenb = "debatenb.main:run"
+run_crew = "debatenb.main:run"
+train = "debatenb.main:train"
+replay = "debatenb.main:replay"
+test = "debatenb.main:test"
+run_with_trigger = "debatenb.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
+
+[tool.uv]
+override-dependencies = [
+    "lancedb>=0.20.0",
+]
+
+required-environments = [
+    "sys_platform == 'win32' and platform_machine == 'AMD64'",
+]
