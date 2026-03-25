@@ -1,14 +1,5 @@
 ## Agentic AI Inventory Management System
 
-NOTE: THIS SYSTEM WAS CREATED TO PRACTICE USING AGENTS,
-BUT IT IS CURRENTLY NOT WORKING PERFECTLY. PLEASE FEEL
-FREE TO OFFER SUGGESTIONS ON HOW TO GET THIS SYSTEM WORKING BETTER.
-
-- Note: running this agentic AI system requires a paid account with OpenAI.
-- You may incur costs due to token usage while running this system.
-- The code for this system is for education purposes and should not be
-- considered production quality code. 
-
 This is an agentic AI inventory mmanagement system. 
 
 It uses the following technologies:
@@ -17,9 +8,7 @@ It uses the following technologies:
 - SQLite database
 
 This program illustrates using AI agents to simulate an 
-automated inventory management system. The central theme is 
-to simulate the changing inventory of a company as it 
-progresses throughout the business cycle. 
+automated inventory management system.
 
 You need a file named .env with a key OPENAI_API_KEY whose value is
 your OpenAI API key:
