@@ -9,7 +9,6 @@ import os
 
 from dotenv import load_dotenv
 
-# Load .env from repo root (agents/) when run from community_contributions
 _load_dir = os.path.dirname(os.path.abspath(__file__))
 for _ in range(4):
     _env = os.path.join(_load_dir, ".env")
